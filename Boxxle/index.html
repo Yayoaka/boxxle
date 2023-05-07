@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sokoban game</title>
+    <link href="/css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+    <div class="game">
+
+        <div id="map1" class="container">
+        </div>
+
+        <div id="msg"></div>
+        <input type="button" value="Last Level" onclick="changeLevel(-1)">
+        <input type="button" value="Next Level" onclick="changeLevel(1)">
+        <input type="button" value="Reset Level" onclick="changeLevel(0)">
+        <input type="button" value="Game Instructions" onclick="showHelp()">
+    </div>
+
+
+    <script src="/js/levels.js"></script>
+    <script src="/js/map.js"></script>
+    <script src="/js/move.js"></script>
+</body>
+
+</html>
